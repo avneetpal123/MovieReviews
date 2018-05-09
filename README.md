@@ -1,14 +1,14 @@
 # MovieReviews
 
-=======================================IMDB MOVIE REVIEW SENTIMENT ANALYSIS=====================================
+IMDB MOVIE REVIEW SENTIMENT ANALYSIS
 
 PROBLEM:
-    The purpose of the project is to determine whether a given movie review has
+    The purpose of the project is to determine whether a given movie review has
     a positive or negative sentiment using maximum entropy,random
     forest classification techniques and One-Dimensional Convolutional Neural Network.
 
 DATA: 
-    - The dataset is the Large Movie Review Dataset often referred to as the IMDB dataset.
+    - The dataset is the Large Movie Review Dataset often referred to as the IMDB dataset.
     - It is a collection of 50,000 reviews from IMDB, allowing no more than 30 reviews per movie.
     - Test and Training data have 25000 records each.
 	- Dataset contains an even number of positive and negative reviews,so both test and training data have 12500 positive and 12500 negative reviews each.
@@ -23,9 +23,9 @@ PROGRAM:
 USAGE:
     The program can be called via a command-line interface.
     It takes just one argument i.e. the input file name which is in csv format
-    
+    
 COMMAND FORMAT:
-    python Project_1.py imdb_master.csv   # for random forest and maximum entropy classifiers
+    python Project_1.py imdb_master.csv   # for random forest and maximum entropy classifiers
 	python project.py 					  # for convolutional neural network
 
 imdb_master.csv is the input file for our project and is present in the data directory
@@ -44,7 +44,7 @@ EXAMPLE:
 		
 ALGORITHM (Step-by-step):
 
-	FOR RANDOM FOREST AND NAIVE BAYES CLASSIFIERS:
+	FOR RANDOM FOREST AND MAXIMUM ENTROPY CLASSIFIERS:
     1. The program first reads the input file which contains the reviews and
         sentiments for both train and test.
     2. Then we divide the data in input file into train set, train response,
