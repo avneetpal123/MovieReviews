@@ -1,0 +1,33 @@
+#########################
+AUTHOR NAME: Paras Sethi
+DATE: May 8, 2018
+#########################
+
+Step 1: Installing python 3.6
+	https://www.python.org/ftp/python/3.6.3/Python-3.6.3.tgz
+
+Step 2: Open the tar folder intall python 3, using "configure"
+
+Step 3: download and install setuptools and pip for package management from:
+	http://pypi.python.org/packages/source/s/setuptools/setuptools-0.6c11.tar.gz#md5=7df2a529a074f613b509fb44feefe74e
+	http://pypi.python.org/packages/source/p/pip/pip-1.2.1.tar.gz#md5=db8a6d8a4564d3dc7f337ebed67b1a85
+
+Step 4: open command line and install the below packages
+	pip3 install numpy  # install numpy
+	pip3 install chardet
+	pip3 install pandas
+	pip3 install pandas_ml
+	pip3 install re
+	pip3 install sklearn
+	pip3 install argparse
+	pip3 install time
+	pip3 install keras
+	pip3 install tensorflow
+	pip3 install matplotlib
+	pip3 install nltk
+
+Note: For Python3, we use pip3 to install
+
+Step 5: Once all packages are intalled, open python and write the below command
+	import nltk
+	nltk.download()
