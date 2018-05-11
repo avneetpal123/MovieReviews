@@ -1,0 +1,10 @@
+#########################
+AUTHOR NAME: Paras Sethi
+DATE: May 8, 2018
+#########################
+
+To search for the emoticon in the data and replacing it with the associate word, we have taken help from the code available at the below website:
+https://github.com/aritter/twitter_nlp/blob/master/python/emoticons.py
+
+We have taken the code from line 10 to line 36 of the file emoticons.py.
+The same has been mentioned in our source code
