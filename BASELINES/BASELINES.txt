@@ -1,0 +1,72 @@
+#########################
+AUTHOR NAME: Paras Sethi
+DATE: May 8, 2018
+#########################
+
+Baseline 1:
+
+Stanford researchers published Learning Word Vectors for Sentiment Analysis paper in 2011 using the dataset they showed that topic modeling using unsupervised vector-based approaches to semantics can model rich lexical meanings, but they largely fail to capture sentiment information that is central to many word meanings and important for a wide range of NLP tasks.
+
+They present a model that uses a mix of unsupervised word-vector and supervised techniques to learn word vectors capturing semantic term–document information as well as rich sentiment content and found that it out-performed several previously introduced methods for sentiment classification.
+
+They have used LSA and compared it with a paper published in 2003 that used LDA.
+
+We wanted to leverage the same i.e. the combination of both word-vector and supervised techniques for our analysis.
+
+Baseline 2:
+
+We have analysed what is the basic approach most of the people do for sentiment analysis. 
+It includes the below steps:
+1: Cleaning the reviews. For this most of the people approach with removing punctuations, stop words, doing stemming.
+2: Training the cleaned reviews with NaiveBayes Classifier
+3: Applying the classifer results on test dataset
+4: Predicting the accuracy and confusion matrix
+
+Results for Baseline 1: 
+LDA Accuracy: 67.42%
+LSA Accuracy: 83.96%
+
+Results for Baseline 2: 
+Accuracy: 83.41%
+Confusion Matrix
+Predicted    	neg    pos  __all__
+Actual
+neg        		10537   1963    12500
+pos         	1964  10536    12500
+__all__    		12501  12499    25000
+
+Results for our Maximum Entropy Classifier:
+Accuracy: 87.59%
+Sensitivity: 0.88024
+Specificity: 0.8716
+F1 Score: 0.876453
+Confusion Matrix:
+Predicted	neg		pos		__all__
+Actual                          
+neg        	10895   1605    	12500
+pos         1497  	11003    	12500
+__all__    	12392 	12608    25000
+
+Results for our Random Forest:
+Accuracy: 84.29%
+Sensitivity: 0.84288
+Specificity: 0.84296
+F1 Score: 0.84291
+Confusion Matrix:
+Predicted    	neg    	pos  	__all__
+Actual
+neg          	10537   1963    12500
+pos         	1964  10536    	12500
+__all__    		12501  12499    25000
+
+Results from Multilayer Perceptron Layer using word embeddings:
+Epoch 2/2
+ - 57s - loss: 0.1844 - acc: 0.9294 - val_loss: 0.3072 - val_acc: 0.8741
+Accuracy: 87.41%
+
+Results from One-Dimensional Convolutional Neural Network Model:
+Epoch 2/2
+ - 90s - loss: 0.2285 - acc: 0.9103 - val_loss: 0.2697 - val_acc: 0.8896
+Accuracy: 88.96%
+
+
